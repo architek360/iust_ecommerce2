@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 
+  name: MyString
+  brand: MyString
+  price: 9.99
+  stock: 1
+  sold: 1
+  image: MyText
+
+two:
+  id: 
+  name: MyString
+  brand: MyString
+  price: 9.99
+  stock: 1
+  sold: 1
+  image: MyText

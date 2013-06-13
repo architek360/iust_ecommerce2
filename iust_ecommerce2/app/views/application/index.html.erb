@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>index</title>
+  <meta name="generator" content="Bluefish 2.2.4" >
+  <meta name="author" content="Erfan" >
+  <meta name="date" content="2013-06-13T12:55:10+0430" >
+  <meta name="copyright" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+  <meta http-equiv="content-style-type" content="text/css">
+  <meta http-equiv="expires" content="0">
+</head>
+<body>
+<h1>Welcome aboard!!!!!</h1>
+<h3>This is the Web-Store's main page.</h3>
+<nav>
+    <% if user_signed_in? %>
+      Signed in as <%= current_user.email %>
+    <% else %>
+      <%= link_to "Sign up" , new_user_registration_path %>
+    <% end %>
+
+    <%= link_to "Sign in" , new_user_session_path %>
+</nav>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Brand</th>
+    <th>Price</th>
+    <th>Stock</th>
+    <th>Sold</th>
+    <th>Image</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+    <% @products.each do |product| %>
+        <tr>
+          <td><%= product.id %></td>
+          <td><%= product.name %></td>
+          <td><%= product.brand %></td>
+          <td><%= product.price %></td>
+          <td><%= product.stock %></td>
+          <td><%= product.sold %></td>
+          <td><%= product.image %></td>
+          <td><%= link_to 'Show', product %></td>
+    <% end %>
+    </table>
+</body>
+</html>
