@@ -24,12 +24,15 @@
     <td><%= product.sold %></td>
     <td><%= product.image %></td>
     <td><%= link_to 'Show', product %></td>
+    <%= admins_only do %>
     <td><%= link_to 'Edit', edit_product_path(product) %></td>
     <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
+<%= admins_only do %>
 <%= link_to 'New Product', new_product_path %>
+<% end %>

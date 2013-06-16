@@ -10,6 +10,15 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="Rails iust_ecommerce2: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="08003ca9-61c0-4936-a23c-ef80c421a450">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://</url>
+        </library>
+      </libraries>
+    </data-source>
   </component>
 </project>
 
