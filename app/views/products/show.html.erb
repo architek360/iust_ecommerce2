@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<div class="product-show">
+  <div class="product-image-holder">
+  <%=image_tag @product.image_url %>
+  </div>
+
+  <div class="part">
+  <p>
+      <b>Name:</b>
+      <%= @product.name %>
+    </p>
+  </div>
+
+  <div class="part">
+  <p>
+      <b>Manufacturer:</b>
+      <%= @product.manufacturer %>
+    </p>
+  </div>
+
+  <div class="part">
+    <p>
+      <b>Description:</b>
+      <div class="desc"><%= @product.description %> </div>
+    </p>
+  </div>
+
+  <div class="part">
+  <p>
+      <b>Price:</b>
+      <%= number_to_currency @product.price %>
+    </p>
+  </div>
+    <%= link_to 'Back', root_url, :class => "link-but" %>
+</div>

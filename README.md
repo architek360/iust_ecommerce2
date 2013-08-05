@@ -1,4 +1,6 @@
-iust_ecommerce2
+E-Commerce-IUST
 ===============
 
-Working on Ruby on Rails to build an e-commerce website
+An E-Commerce website powered on Ruby on Rails 3.2
+
+for more information refer to  `doc/app/index.html`

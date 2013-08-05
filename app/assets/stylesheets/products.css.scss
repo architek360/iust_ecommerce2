@@ -1,0 +1,82 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bourbon";
+.entry {
+  .product_name {
+    a{
+      text-decoration: none;
+      color: #576bff;
+    }
+    font-size: 1.3em;
+    text-shadow: 1px 1px  #536480;
+    font-weight: bolder;
+  }
+  img {
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+    @include box-shadow(2px 2px 3px 3px hsla(0, 0%, 0%, 0.75));
+  }
+  .right_side {
+    @include display-box;
+    @include box-align(start);
+    @include box-orient(vertical);
+    @include box-pack(start);
+    padding-right: 10px;
+    float: left;
+    width: 300px;
+      }
+  .product_description {
+    font-size: 1.1em;
+  }
+  .price_line {
+    @include display-box;
+    @include box-align(start);
+    @include box-orient(horizontal);
+    @include box-pack(start);
+  }
+  .price {
+    font-size: 2em;
+    text-shadow: 2px 2px #19363c;
+    color: green;
+  }
+  @include clearfix;
+}
+
+.product-show {
+  background: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 10px hsla(0, 0%, 0%, 0.65);
+
+  .part:hover {
+    border-radius: 10px;
+    background-color: #fff380;
+  }
+  b{
+    color: #862121;
+    text-shadow: 2px 2px #fff365;
+    display: block;
+  }
+  .product-image-holder {
+    text-align: center;
+  }
+  img {
+    border-radius: 10px;
+    box-shadow: 5px 5px gray ;
+  }
+  .desc:first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    float: left;
+    width: 1em;
+    line-height: 1;
+  }
+
+}
